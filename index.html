@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford</title>    
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header>       
+        <!-- Logo Ford -->
+        <div>
+            <img src="img/logo-ford-256.png" width="150" class="logo" />
+        </div>
+        <nav>
+            <!-- Menu -->
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="lancamento.html">Lançamento</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div id="carousel">
+
+            <!-- Navegacao manual -->
+            <!-- <div class="navigation_manual">
+                <label for="radio1" class="button_manual"></label>
+                <label for="radio2" class="button_manual"></label>
+                <label for="radio3" class="button_manual"></label>
+            </div> -->
+        </div>
+
+        <div id="carousel-title">
+        </div>
+        
+        <script>
+             //Insira cada imagem no carrossel
+            carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
+            carouselArr.push(new Carousel("imagem_2.jpg","Ford a nossa história","lancamento.html"));
+            carouselArr.push(new Carousel("imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
+            Carousel.Start(carouselArr);
+        </script>
+    </main>
+    <footer>
+        <nav id="social">
+            <!-- Icones da redes -->
+            <ul>
+                <li><span class="redesociais">Redes Sociais</span></li>
+                <li><a href="https://www.facebook.com/FordBrasil/?locale=pt_BR" title="Facebook"><img src="img/facebook-50.png"></a></li>
+                <li><a href="https://www.youtube.com/fordbrasi" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
+                <li><a href="https://www.instagram.com/ford?igsh=MTBtaHU5NWx3cnpsag==" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
+            </ul>
+        </nav>
+        <!-- copyright -->
+        <div>
+           <img src="img/ford-96.png" width="70"  />
+        </div>
+    </footer> 
+    <!-- link para aquivo JS -->
+    <script src="js/carousel.js"></script>  
+</body>
+</html>
