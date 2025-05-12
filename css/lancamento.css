@@ -1,0 +1,154 @@
+.descrição {
+    text-align: center;
+    font-size: 1rem;
+    margin: 4%;
+    font-weight: 600;
+}
+
+main {
+    display: block;
+}
+
+ul.modelcars {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+    animation-name : opacity;
+    animation-duration: 6s;
+}
+
+ul.modelcars li {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    padding: 12px;
+    vertical-align: top;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px black;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+ul.modelcars:hover > :not(:hover) {
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.photocar {
+    display: block;
+    width: 280px;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #1b357e;
+}
+.checkbox :hover {
+    cursor: pointer;
+}
+
+.infocar div {
+    display: inline-block;
+}
+
+.info {
+    width: 210px;
+    vertical-align: top;
+}
+
+.textmodel {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #1351d8;
+    
+}
+.textprice {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+}
+button {
+    width: 250px;
+    height: 40px;
+}
+button:hover {
+    width: 215px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 10px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    img {
+        width: 110%;
+    }
+  }
+
+  td:nth-child(1) {  
+    font-weight: 700;
+    width: 40%;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+div#compare {
+    position: absolute;
+    display: none;
+    width: 50vw;
+    max-width: 800px;
+    min-width: 400px;
+    height: 100vh;
+    max-height: 700px;
+    min-height: 350px;
+    background: #fff;
+    top: calc(100vh - 80%);
+    left: 25vw;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
+    box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
+}
+
+@media (max-width: 375px) {
+    .descrição {
+        text-align: justify;
+        margin: 20px;
+    }
+    div#compare {
+        min-width: 300px;
+        width: 85vw;
+        left: 5vw;
+    }
+    table {
+        width: 100%;
+    }
+    th, td {
+        font-size: 0.9rem;
+        img {
+            width: 25vw;
+        }
+      }
+}
